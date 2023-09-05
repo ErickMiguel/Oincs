@@ -188,7 +188,7 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 		btn.onclick = function(){
 			let id = this.id.replace('id_despesa_','')
 			//alert(id)
-			bd.remover(id)
+			bd.remove(id)
 			window.location.reload()
 		}
 		linha.insertCell(4).append(btn)
